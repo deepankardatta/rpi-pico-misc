@@ -79,6 +79,7 @@ def display_image(filename):
     
     # Clear the screen - as if we have image not at full size of screen
     # it gets displayed with some of the previous image remaining
+    # done after the first decode step so we don't publish over the framebuffer	
     #
     # note that the picographics manual has this as display.clear()
     # but we initilaised this as graphics at top
